@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B62B74B41CDE991600C85604 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74B31CDE991600C85604 /* main.swift */; };
+		B62B74BB1CDE995A00C85604 /* Kebab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BA1CDE995A00C85604 /* Kebab.swift */; };
+		B62B74BE1CDE9A2C00C85604 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		B62B74B01CDE991600C85604 /* kata-kebab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kata-kebab"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62B74B31CDE991600C85604 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B62B74BA1CDE995A00C85604 /* Kebab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kebab.swift; sourceTree = "<group>"; };
+		B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,27 @@
 		B62B74B21CDE991600C85604 /* kata-kebab */ = {
 			isa = PBXGroup;
 			children = (
+				B62B74BF1CDE9B6700C85604 /* tests */,
+				B62B74BC1CDE996700C85604 /* beans */,
 				B62B74B31CDE991600C85604 /* main.swift */,
 			);
 			path = "kata-kebab";
+			sourceTree = "<group>";
+		};
+		B62B74BC1CDE996700C85604 /* beans */ = {
+			isa = PBXGroup;
+			children = (
+				B62B74BA1CDE995A00C85604 /* Kebab.swift */,
+				B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */,
+			);
+			name = beans;
+			sourceTree = "<group>";
+		};
+		B62B74BF1CDE9B6700C85604 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62B74B41CDE991600C85604 /* main.swift in Sources */,
+				B62B74BB1CDE995A00C85604 /* Kebab.swift in Sources */,
+				B62B74BE1CDE9A2C00C85604 /* Ingredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
