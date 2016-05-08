@@ -8,18 +8,20 @@
 
 import Foundation
 
-class Kebab {
+class CompositeIngredient : IngredientProtocol {
     
-    var ingredients: [Ingredient]
+    var name: String
+    var ingredients: [IngredientProtocol]
     
-    init(ingredients: [Ingredient]) {
-        self.ingredients = ingredients
+    init(name: String) {
+        self.name = name
+        self.ingredients = []
     }
     
-    func isVegeterian() -> Bool {
+    func isVegetarian() -> Bool {
         var isVegetarian: Bool = true
         
-        if ingredients.contains({$0.isVegetable == false})  {
+        if ingredients.contains({$0.isVegetarian() == false})  {
             isVegetarian = false
         }
         
@@ -29,18 +31,22 @@ class Kebab {
     func isPescetarian() -> Bool {
         var isPescetarian: Bool = true
         
-        if ingredients.contains({$0.isSeaMeet == false && $0.isMeet == true})  {
+        if ingredients.contains({$0.isPescetarian() != true})  {
             isPescetarian = false
         }
         
         return isPescetarian
     }
     
+    func addIngredient(ingredient: IngredientProtocol) {
+        ingredients.append(ingredient)
+    }
+    
     func removeIngredient(ingredient: Ingredient) {
         ingredients = ingredients.filter({$0.name != ingredient.name});
     }
     
-    func getComposition() -> String {
+    func toString() -> String {
         return ingredients.map({$0.toString()}).joinWithSeparator("|");
     }
     

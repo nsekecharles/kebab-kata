@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Ingredient {
+class Ingredient: IngredientProtocol {
     
     var name: String
     var isVegetable: Bool
@@ -24,7 +24,16 @@ class Ingredient {
     
     func toString()-> String {
         let index = name.startIndex
-        //return name.uppercaseString.characters.first
         return String(name.uppercaseString[index])
     }
+    
+    func isVegetarian() -> Bool {
+        return self.isVegetable || !self.isMeet
+    }
+    
+    
+    func isPescetarian() -> Bool {
+        return (self.isSeaMeet && self.isMeet) || !self.isMeet
+    }
+    
 }

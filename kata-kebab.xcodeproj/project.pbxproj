@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B62B74B41CDE991600C85604 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74B31CDE991600C85604 /* main.swift */; };
-		B62B74BB1CDE995A00C85604 /* Kebab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BA1CDE995A00C85604 /* Kebab.swift */; };
+		B62B74BB1CDE995A00C85604 /* CompositeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BA1CDE995A00C85604 /* CompositeIngredient.swift */; };
 		B62B74BE1CDE9A2C00C85604 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */; };
-		B62B74C31CDEB1A300C85604 /* AnimalFlesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74C21CDEB1A300C85604 /* AnimalFlesh.swift */; };
-		B62B74C51CDEB1D000C85604 /* Vegetables.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74C41CDEB1D000C85604 /* Vegetables.swift */; };
+		B674EEFC1CDF94250082F00B /* IngredientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B674EEFB1CDF94250082F00B /* IngredientProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,10 +28,9 @@
 /* Begin PBXFileReference section */
 		B62B74B01CDE991600C85604 /* kata-kebab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kata-kebab"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62B74B31CDE991600C85604 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B62B74BA1CDE995A00C85604 /* Kebab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kebab.swift; sourceTree = "<group>"; };
+		B62B74BA1CDE995A00C85604 /* CompositeIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeIngredient.swift; sourceTree = "<group>"; };
 		B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		B62B74C21CDEB1A300C85604 /* AnimalFlesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalFlesh.swift; sourceTree = "<group>"; };
-		B62B74C41CDEB1D000C85604 /* Vegetables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vegetables.swift; sourceTree = "<group>"; };
+		B674EEFB1CDF94250082F00B /* IngredientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +73,9 @@
 		B62B74BC1CDE996700C85604 /* beans */ = {
 			isa = PBXGroup;
 			children = (
-				B62B74BA1CDE995A00C85604 /* Kebab.swift */,
+				B62B74BA1CDE995A00C85604 /* CompositeIngredient.swift */,
 				B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */,
-				B62B74C21CDEB1A300C85604 /* AnimalFlesh.swift */,
-				B62B74C41CDEB1D000C85604 /* Vegetables.swift */,
+				B674EEFB1CDF94250082F00B /* IngredientProtocol.swift */,
 			);
 			name = beans;
 			sourceTree = "<group>";
@@ -147,11 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62B74C31CDEB1A300C85604 /* AnimalFlesh.swift in Sources */,
 				B62B74B41CDE991600C85604 /* main.swift in Sources */,
-				B62B74BB1CDE995A00C85604 /* Kebab.swift in Sources */,
+				B62B74BB1CDE995A00C85604 /* CompositeIngredient.swift in Sources */,
 				B62B74BE1CDE9A2C00C85604 /* Ingredient.swift in Sources */,
-				B62B74C51CDEB1D000C85604 /* Vegetables.swift in Sources */,
+				B674EEFC1CDF94250082F00B /* IngredientProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +269,7 @@
 				B62B74B91CDE991600C85604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

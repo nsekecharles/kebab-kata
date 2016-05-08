@@ -14,10 +14,15 @@ let fish = Ingredient(name: "Fish", isVegetable: false, isMeet: true, isSeaMeet:
 let cheese = Ingredient(name: "Cheese", isVegetable: false, isMeet: false, isSeaMeet: false)
 let onion = Ingredient(name: "Onion", isVegetable: true, isMeet: false, isSeaMeet: false)
 
-let ingredients = [cheese, tomate, beef, cheese, onion]
-let kebab = Kebab(ingredients: ingredients)
+let kebab = CompositeIngredient(name: "kebab")
 
-if kebab.isVegeterian() {
+kebab.addIngredient(cheese)
+kebab.addIngredient(tomate)
+kebab.addIngredient(fish)
+kebab.addIngredient(cheese)
+kebab.addIngredient(onion)
+
+if kebab.isVegetarian() {
     print("vegetarian")
 }else {
     print("not vegetarian")
@@ -30,12 +35,12 @@ if kebab.isPescetarian() {
     print("not pesceterian")
 }
 
-print(kebab.getComposition())
+print(kebab.toString())
 
 kebab.removeIngredient(onion)
 
-print(kebab.getComposition())
+print(kebab.toString())
 
 kebab.doubleIngredient(cheese)
 
-print(kebab.getComposition())
+print(kebab.toString())
