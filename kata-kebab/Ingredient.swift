@@ -12,9 +12,10 @@ class Ingredient {
     
     var name: String
     var isVegetable: Bool
-    
-    init(name: String, isVegetable: Bool) {
+    var isSeaMeet: Bool
+    init(name: String, isVegetable: Bool, isSeaMeet: Bool) {
         self.name = name
         self.isVegetable = isVegetable
+        self.isSeaMeet = isSeaMeet
     }
 }

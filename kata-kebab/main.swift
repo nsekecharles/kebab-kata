@@ -8,13 +8,21 @@
 
 import Foundation
 
-let tomate = Ingredient(name: "Tomate", isVegetable: true)
-let beef = Ingredient(name: "Beef", isVegetable: false)
-let ingredients = [tomate, beef]
+let tomate = Ingredient(name: "Tomate", isVegetable: true, isSeaMeet: false)
+let beef = Ingredient(name: "Beef", isVegetable: false, isSeaMeet: false)
+let fish = Ingredient(name: "Fish", isVegetable: false, isSeaMeet: true)
+let ingredients = [tomate, fish]
 let kebab = Kebab(ingredients: ingredients)
 
 if kebab.isVegeterian() {
     print("vegetarian")
 }else {
     print("not vegetarian")
+}
+
+
+if kebab.isPescetarian() {
+    print("also pesceterian")
+}else {
+    print("not pesceterian")
 }

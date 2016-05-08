@@ -17,12 +17,22 @@ class Kebab {
     }
     
     func isVegeterian() -> Bool {
-        
         var isVegetarian: Bool = true
+        
         if ingredients.contains({$0.isVegetable == false})  {
             isVegetarian = false
         }
         
         return isVegetarian
+    }
+    
+    func isPescetarian() -> Bool {
+        var isPescetarian: Bool = true
+        
+        if ingredients.contains({$0.isSeaMeet == false && $0.isVegetable == false})  {
+            isPescetarian = false
+        }
+        
+        return isPescetarian
     }
 }

@@ -10,6 +10,8 @@
 		B62B74B41CDE991600C85604 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74B31CDE991600C85604 /* main.swift */; };
 		B62B74BB1CDE995A00C85604 /* Kebab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BA1CDE995A00C85604 /* Kebab.swift */; };
 		B62B74BE1CDE9A2C00C85604 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */; };
+		B62B74C31CDEB1A300C85604 /* AnimalFlesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74C21CDEB1A300C85604 /* AnimalFlesh.swift */; };
+		B62B74C51CDEB1D000C85604 /* Vegetables.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74C41CDEB1D000C85604 /* Vegetables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,8 @@
 		B62B74B31CDE991600C85604 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B62B74BA1CDE995A00C85604 /* Kebab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kebab.swift; sourceTree = "<group>"; };
 		B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		B62B74C21CDEB1A300C85604 /* AnimalFlesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalFlesh.swift; sourceTree = "<group>"; };
+		B62B74C41CDEB1D000C85604 /* Vegetables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vegetables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				B62B74BA1CDE995A00C85604 /* Kebab.swift */,
 				B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */,
+				B62B74C21CDEB1A300C85604 /* AnimalFlesh.swift */,
+				B62B74C41CDEB1D000C85604 /* Vegetables.swift */,
 			);
 			name = beans;
 			sourceTree = "<group>";
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62B74C31CDEB1A300C85604 /* AnimalFlesh.swift in Sources */,
 				B62B74B41CDE991600C85604 /* main.swift in Sources */,
 				B62B74BB1CDE995A00C85604 /* Kebab.swift in Sources */,
 				B62B74BE1CDE9A2C00C85604 /* Ingredient.swift in Sources */,
+				B62B74C51CDEB1D000C85604 /* Vegetables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
