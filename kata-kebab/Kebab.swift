@@ -29,10 +29,41 @@ class Kebab {
     func isPescetarian() -> Bool {
         var isPescetarian: Bool = true
         
-        if ingredients.contains({$0.isSeaMeet == false && $0.isVegetable == false})  {
+        if ingredients.contains({$0.isSeaMeet == false && $0.isMeet == true})  {
             isPescetarian = false
         }
         
         return isPescetarian
     }
+    
+    func removeIngredient(ingredient: Ingredient) {
+        ingredients = ingredients.filter({$0.name != ingredient.name});
+    }
+    
+    func getComposition() -> String {
+        return ingredients.map({$0.toString()}).joinWithSeparator("|");
+    }
+    
+    func doubleIngredient(ingredient: Ingredient) {
+        var indexesOfIngredient: [Int] = []
+        if ingredients.contains({$0.name == ingredient.name}) {
+            
+            for index in 0..<ingredients.count {
+                if ingredients[index].name == ingredient.name {
+                    indexesOfIngredient.append(index)
+                }
+                
+            }
+            
+            for counter in 0..<indexesOfIngredient.count {
+                ingredients.insert(ingredient, atIndex: indexesOfIngredient[counter] + counter)
+            }
+        }
+        
+    }
+    
+    
+    
+    
+    
 }

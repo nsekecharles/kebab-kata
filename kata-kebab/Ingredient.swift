@@ -13,9 +13,18 @@ class Ingredient {
     var name: String
     var isVegetable: Bool
     var isSeaMeet: Bool
-    init(name: String, isVegetable: Bool, isSeaMeet: Bool) {
+    var isMeet: Bool
+    
+    init(name: String, isVegetable: Bool, isMeet:Bool, isSeaMeet: Bool) {
         self.name = name
         self.isVegetable = isVegetable
         self.isSeaMeet = isSeaMeet
+        self.isMeet = isMeet
+    }
+    
+    func toString()-> String {
+        let index = name.startIndex
+        //return name.uppercaseString.characters.first
+        return String(name.uppercaseString[index])
     }
 }
