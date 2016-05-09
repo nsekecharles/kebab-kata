@@ -8,37 +8,21 @@
 
 import Foundation
 
-class CompositeIngredient : IngredientProtocol {
+class Kebab : IngredientVisitable {
     
     var name: String
-    var ingredients: [IngredientProtocol]
+    var ingredients: [Ingredient]
     
     init(name: String) {
         self.name = name
         self.ingredients = []
     }
     
-    func isVegetarian() -> Bool {
-        var isVegetarian: Bool = true
-        
-        if ingredients.contains({$0.isVegetarian() == false})  {
-            isVegetarian = false
-        }
-        
-        return isVegetarian
+    func accept(visitor: IngredientVisitor) {
+        visitor.visit(self)
     }
     
-    func isPescetarian() -> Bool {
-        var isPescetarian: Bool = true
-        
-        if ingredients.contains({$0.isPescetarian() != true})  {
-            isPescetarian = false
-        }
-        
-        return isPescetarian
-    }
-    
-    func addIngredient(ingredient: IngredientProtocol) {
+    func addIngredient(ingredient: Ingredient) {
         ingredients.append(ingredient)
     }
     
@@ -53,19 +37,15 @@ class CompositeIngredient : IngredientProtocol {
     func doubleIngredient(ingredient: Ingredient) {
         var indexesOfIngredient: [Int] = []
         if ingredients.contains({$0.name == ingredient.name}) {
-            
             for index in 0..<ingredients.count {
                 if ingredients[index].name == ingredient.name {
                     indexesOfIngredient.append(index)
                 }
-                
             }
-            
             for counter in 0..<indexesOfIngredient.count {
                 ingredients.insert(ingredient, atIndex: indexesOfIngredient[counter] + counter)
             }
         }
-        
     }
     
     

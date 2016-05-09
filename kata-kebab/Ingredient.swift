@@ -8,18 +8,20 @@
 
 import Foundation
 
-class Ingredient: IngredientProtocol {
+class Ingredient: IngredientVisitable {
     
     var name: String
-    var isVegetable: Bool
     var isSeaMeet: Bool
     var isMeet: Bool
     
-    init(name: String, isVegetable: Bool, isMeet:Bool, isSeaMeet: Bool) {
+    init(name: String, isMeet:Bool, isSeaMeet: Bool) {
         self.name = name
-        self.isVegetable = isVegetable
         self.isSeaMeet = isSeaMeet
         self.isMeet = isMeet
+    }
+    
+    func accept(visitor: IngredientVisitor) {
+        visitor.visit(self)
     }
     
     func toString()-> String {
@@ -27,13 +29,5 @@ class Ingredient: IngredientProtocol {
         return String(name.uppercaseString[index])
     }
     
-    func isVegetarian() -> Bool {
-        return self.isVegetable || !self.isMeet
-    }
-    
-    
-    func isPescetarian() -> Bool {
-        return (self.isSeaMeet && self.isMeet) || !self.isMeet
-    }
     
 }

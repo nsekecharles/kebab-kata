@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B62B74B41CDE991600C85604 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74B31CDE991600C85604 /* main.swift */; };
-		B62B74BB1CDE995A00C85604 /* CompositeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BA1CDE995A00C85604 /* CompositeIngredient.swift */; };
+		B62B74BB1CDE995A00C85604 /* Kebab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BA1CDE995A00C85604 /* Kebab.swift */; };
 		B62B74BE1CDE9A2C00C85604 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */; };
-		B674EEFC1CDF94250082F00B /* IngredientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B674EEFB1CDF94250082F00B /* IngredientProtocol.swift */; };
+		B674EEFE1CE118D50082F00B /* IngredientVisitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B674EEFD1CE118D50082F00B /* IngredientVisitable.swift */; };
+		B674EF001CE119830082F00B /* IngredientVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B674EEFF1CE119830082F00B /* IngredientVisitor.swift */; };
+		B674EF021CE11AAB0082F00B /* VegetarianVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B674EF011CE11AAB0082F00B /* VegetarianVisitor.swift */; };
+		B674EF041CE11ECA0082F00B /* PescetarianVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B674EF031CE11ECA0082F00B /* PescetarianVisitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +31,12 @@
 /* Begin PBXFileReference section */
 		B62B74B01CDE991600C85604 /* kata-kebab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kata-kebab"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62B74B31CDE991600C85604 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B62B74BA1CDE995A00C85604 /* CompositeIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeIngredient.swift; sourceTree = "<group>"; };
+		B62B74BA1CDE995A00C85604 /* Kebab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kebab.swift; sourceTree = "<group>"; };
 		B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		B674EEFB1CDF94250082F00B /* IngredientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientProtocol.swift; sourceTree = "<group>"; };
+		B674EEFD1CE118D50082F00B /* IngredientVisitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientVisitable.swift; sourceTree = "<group>"; };
+		B674EEFF1CE119830082F00B /* IngredientVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientVisitor.swift; sourceTree = "<group>"; };
+		B674EF011CE11AAB0082F00B /* VegetarianVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegetarianVisitor.swift; sourceTree = "<group>"; };
+		B674EF031CE11ECA0082F00B /* PescetarianVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PescetarianVisitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +79,12 @@
 		B62B74BC1CDE996700C85604 /* beans */ = {
 			isa = PBXGroup;
 			children = (
-				B62B74BA1CDE995A00C85604 /* CompositeIngredient.swift */,
+				B62B74BA1CDE995A00C85604 /* Kebab.swift */,
 				B62B74BD1CDE9A2C00C85604 /* Ingredient.swift */,
-				B674EEFB1CDF94250082F00B /* IngredientProtocol.swift */,
+				B674EEFD1CE118D50082F00B /* IngredientVisitable.swift */,
+				B674EEFF1CE119830082F00B /* IngredientVisitor.swift */,
+				B674EF011CE11AAB0082F00B /* VegetarianVisitor.swift */,
+				B674EF031CE11ECA0082F00B /* PescetarianVisitor.swift */,
 			);
 			name = beans;
 			sourceTree = "<group>";
@@ -145,9 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62B74B41CDE991600C85604 /* main.swift in Sources */,
-				B62B74BB1CDE995A00C85604 /* CompositeIngredient.swift in Sources */,
+				B674EF001CE119830082F00B /* IngredientVisitor.swift in Sources */,
+				B674EF041CE11ECA0082F00B /* PescetarianVisitor.swift in Sources */,
+				B62B74BB1CDE995A00C85604 /* Kebab.swift in Sources */,
+				B674EEFE1CE118D50082F00B /* IngredientVisitable.swift in Sources */,
+				B674EF021CE11AAB0082F00B /* VegetarianVisitor.swift in Sources */,
 				B62B74BE1CDE9A2C00C85604 /* Ingredient.swift in Sources */,
-				B674EEFC1CDF94250082F00B /* IngredientProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
